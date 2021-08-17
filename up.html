@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <form method="POST" action="baseimg.php" enctype="multipart/form-data">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <center>
+    <img src="img/banner.PNG" alt="Banner ITT">
+    </center>
+  <title>Subir Archivos</title>
+
+</head>
+
+<body>
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="images/logop.png" alt="" width="110" height="54" class="d-inline-block align-text-top">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="up.html">Subir Archivos</a>
+        <a class="nav-link" href="down.html">Consultar archivos</a>
+        <a class="nav-link" href="index.html">Cerrar sesión</a>
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </div>
+    </div>
+</nav>
+    <div>
+        <br><br><br>
+        <h1>Subir Archivos</h1>
+        <p class="p2"><i>Para subir un archivo simplemente presiona el botón azul y posteriormente selecciona el archivo a subir.(Caso Comité)</i></p>
+      
+<div class="container">
+        
+        <!-- CARD ELEMENT -->
+        <div class="card" >
+            <img id="img-preview">
+            <div class="card-footer">
+						<input class="input100" type="text" name="id_img" id="id_img" placeholder="No. de control">
+            <select name="year" id="year">
+              <option value="novale" id="novale" required>Elija semestre y año</option>
+              <option value="1">Enero-Junio 2018</option>
+              <option value="2">Agosto-Diciembre 2018</option>
+              <option value="3">Enero-Junio 2019</option>
+              <option value="4">Agosto-Diciembre 2019</option>
+              <option value="5">Enero-Junio 2020</option>
+              <option value="6">Agosto-Diciembre 2020</option>
+              <option value="7">Enero-Junio 202021</option>
+            </select>
+            <input type="file" name="img-uploader" id="img-uploader">
+            <progress class="barra" id="img-upload-bar" value="0" max="100" style="width: 100%"></progress>
+          <button class="login100-form-btn">
+								Enviar
+							</button>
+        </div>
+
+    </div>
+
+    </div>
+        <table>
+            <tr>
+              <th>Recientes</th>
+              <th>Fecha de subida</th>
+            </tr>
+            <tr>
+              <td>Lorem Ipsum</td>
+              <td>Lorem Ipsum</td>
+            </tr>
+            <tr>
+              <td>Lorem Ipsum</td>
+              <td>Lorem Ipsum</td>
+            </tr>
+            <tr>
+              <td>Lorem Ipsum</td>
+              <td>Lorem Ipsum</td>
+            </tr>
+          </table>
+          <a href="down.html">Buscar en archivo...</a>
+    </div>
+    
+        <footer>
+            <p>Proyecto Residencia 2021©<br>
+            <a href="mailto:hege@example.com">hege@example.com</a></p>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="index.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
