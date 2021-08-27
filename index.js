@@ -5,6 +5,7 @@ const imageUploadbar = document.getElementById('img-upload-bar');
 const CLOUDINARY_URL = 'https://api.cloudinary.com/v1_1/iqinc/image/upload';
 const CLOUDINARY_UPLOAD_PRESET= 'pxzzsdi5';
 
+
 imageUploader.addEventListener('change', async (e) => {
     const file = e.target.files[0];
     var year = document.getElementById("year").value;

@@ -17,7 +17,7 @@ if (!$conn)
    # $imagen=$_FILES['img-uploader']['tmp_name'];
     $imagen=addslashes(file_get_contents($_FILES['img-uploader']['tmp_name']));
 
-    $query = "INSERT INTO dictamen(id_img,year,imagen) VALUES('$id_img','$year','$imagen')";
+    $query = "INSERT INTO dictamen1(id_img,year,imagen) VALUES('$id_img','$year','$imagen')";
     $resultado = $conn->query($query);
 
     if($resultado){
